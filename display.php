@@ -1,21 +1,28 @@
 <?php
-  	// initialize the counter to 0
-	$counter = 0;
+  	// initialize the sum to 0
+	$sum = 0;
+
 	// initalize numbers as an empty string
 	$numbers = "";
 	
 	// get the user number
 	$userNum = intval($_POST["userNum"]);
 
-	// use a while loop to display the numbers from 0 up to the user number
-	while ($counter <= $userNum) {
-		// build the string of numbers with a line break each time
-		$numbers = $numbers . $counter . "<br>";
-		// increment the counter
-		$counter++;
+	// use a for loop to calculate and display the sum from 0 up to the user number
+	for ($counter = 0; $counter <= $userNum; $counter++) {
+		// if we have not reached the userNum, add a + to the end
+		if ($counter < $userNum) {
+			$numbers = $numbers . $counter . "+";
+		}
+		// if we have reached the userNum, we are done building our string of numbers
+		else {
+			$numbers = $numbers . $counter;
+		}
+		// add the counter to the current sum
+		$sum = $sum + $counter;
 	}
 
-	echo $numbers;
+	echo $numbers . "=" . $sum;
 ?>
 
 

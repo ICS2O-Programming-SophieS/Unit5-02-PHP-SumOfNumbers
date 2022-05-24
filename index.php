@@ -11,13 +11,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
     <link rel="manifest" href="./fav/site.webmanifest">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Number Display in JS</title>
+    <title>Sum of Numbers in PHP</title>
   </head>
   <body>
 
 	  
-    <h1>NumberDisplay in JS</h1>
-		<h3>This program will display all numbers from  0 up to your number:</h3>
+    <h1>Sum of Numbers in PHP</h1>
+		<h3>This program will calculate and display the sum of numbers from 0 up to your number:</h3>
 		<table>
 			<tr align = "center">
 				<td valign="top" align="right">					
